@@ -1,0 +1,84 @@
+LOGGER_NAME: 'log'
+SEED: 1546884941.160048
+ROOT_DIR: "experiments/0917_se101_real_clipart_no_aug_re_train"
+############################ TRAIN ############################
+TRAIN:
+  BATCH_SIZE: 32
+  FIX_NUM: 2
+  FIX_BN: False
+############################ TEST ############################
+TEST:
+  BATCH_SIZE: 32
+
+############################ DATA_LOADER ############################
+DATA_LOADER:
+  NUM_WORKERS: 32  # 4
+  SHUFFLE: True
+  DATA_ROOT: '../data'
+  SOURCE: 'real_clipart_balance'
+  TARGET: 'clipart'
+  SOURCE_TYPE: 'list'
+  TARGET_TYPE: 'list' # list, online
+  ITER: -1
+  CLASS_NUM_PERBATCH: 6
+  TRG_PSEUDOLABELS: ''
+  COMPUTE_TRG_PSEUDOLABELS: True
+  OUTPUT_TRG_PSEUDOLABELS: True
+
+############################ SOLVER ############################
+SOLVER:
+  BASE_LR: 0.001
+  NEW_LR: 0.01
+  TYPE: 'sgd'
+  LR_POLICY: 'step'
+  GAMMA: 0.1
+  STEP_SIZE: 10
+  MAX_EPOCH: 30
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
+  WEIGHT_DECAY_BIAS: 0.0005
+  BIAS_LR_FACTOR: 1
+  DISPLAY: 20
+  SNAPSHOT_ITERS: 1
+  TEST_INTERVAL: 1
+
+############################ LOSSES ############################
+LOSSES:
+  CROSS_ENT_WEIGHT: 1.0
+  CNT_ENT_WEIGHT: 0.0
+  ########### MMD ###########
+  MMD_WEIGHT: 0.0
+  KERNEL_MUL: 2.0
+  KERNEL_NUM: 5
+  MMD_NEG_WEIGHT: 1.0
+  ########### MMD ###########
+
+############################ AUG ############################
+AUG:
+  ADVANCE: False
+  TEST_CROP: [224, 224]
+  RESIZE: [256, 256]
+  RND_CROP: [224, 224]
+  V_FLIP: 0.0
+  H_FLIP: 0.5
+  ROTATION: 5.0
+  BRIGHTNESS: 0.2
+  CONTRAST: 0.2
+  SATURATION: 0.2
+  HUE: 0.0
+  MULTI_CROP_SIZE: 0
+
+############################ MODEL ############################
+MODEL:
+  SOURCE_ONLY: True
+  CLASS_NUM: 345
+  #  NET: 'se_resnext101_32x4d'  # se_resnext50_32x4d, se_resnext101_32x4d
+  NET: 'se_resnext101_32x4d'  # se_resnext50_32x4d, se_resnext101_32x4d
+  IN_DIM: 2048
+  #  IN_DIM: 4320
+  EMBED_DIM: 1000
+  MIN_CLS_NUM: 5
+  MIN_CONF: 0.5
+  PSEUDO_TPYE: 'simple'      # simple, kmeans
+  KMEANS_NORM: True
+  KMEANS_MAX_STEP: 1000

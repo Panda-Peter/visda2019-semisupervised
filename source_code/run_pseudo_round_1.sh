@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+bash scripts/0920_eff4_real_clipart_no_aug_round_1_v2.sh
+bash scripts/0920_eff4_real_painting_no_aug_round_1_v2.sh
+bash scripts/0920_eff5_real_clipart_no_aug_round_1_v2.sh
+bash scripts/0920_eff5_real_painting_no_aug_round_1_v2.sh
+bash scripts/0920_eff6_real_clipart_no_aug_round_1_v2.sh
+bash scripts/0920_eff6_real_painting_no_aug_round_1_v2.sh
+bash scripts/0920_eff7_real_clipart_no_aug_round_1_v2.sh
+bash scripts/0920_eff7_real_painting_no_aug_round_1_v2.sh
+bash scripts/0920_inception_real_clipart_no_aug_round_1_v2.sh
+bash scripts/0920_inception_real_painting_no_aug_round_1_v2.sh
+bash scripts/0920_se101_real_clipart_no_aug_round_1_v2.sh
+bash scripts/0920_se101_real_painting_no_aug_round_1_v2.sh
+bash scripts/0920_se152_real_clipart_no_aug_round_1_v2.sh
+bash scripts/0920_se152_real_painting_no_aug_round_1_v2.sh

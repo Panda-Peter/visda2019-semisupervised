@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+bash scripts/0917_eff5_real_clipart_no_aug_re_train.sh
+bash scripts/0917_eff5_real_painting_no_aug_re_train.sh
+bash scripts/0917_eff6_real_clipart_no_aug_re_train.sh
+bash scripts/0917_eff6_real_painting_no_aug_re_train.sh
+bash scripts/0917_eff7_real_clipart_no_aug_re_train.sh
+bash scripts/0917_eff7_real_painting_no_aug_re_train.sh
+bash scripts/0917_se101_real_clipart_no_aug_re_train.sh
+bash scripts/0917_se101_real_painting_no_aug_re_train.sh
+bash scripts/0917_se152_real_clipart_no_aug_re_train.sh
+bash scripts/0917_se152_real_painting_no_aug_re_train.sh
+bash scripts/0918_eff4_real_clipart_no_aug_re_train.sh
+bash scripts/0918_eff4_real_painting_no_aug_re_train.sh
+bash scripts/0918_inception_real_clipart_no_aug_re_train.sh
+bash scripts/0918_inception_real_painting_no_aug_re_train.sh
