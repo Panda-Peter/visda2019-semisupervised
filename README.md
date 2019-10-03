@@ -1,5 +1,5 @@
 # This repo contains the training and inference code for semi-supervised cross-domain classification. 
-
+Pre-trained models and extracted scores are uploaded to https://drive.google.com/open?id=1yymuaZx4h8z9f5IPhUY87oBbh5ki9Lat .
 ## Folder structure
 ```
 ├── data
