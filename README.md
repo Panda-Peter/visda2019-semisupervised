@@ -1,4 +1,6 @@
 # visda2019-semisupervised 
+We release the source code of our submissions for Semi-Supervised Domain Adaptation task in VisDA-2019. Details can be referred in [Technical report](https://drive.google.com/open?id=1DvZ-QnSNoYnIkrv6jeVYzQ2S2bV4NDmy).
+
 Pre-trained models and extracted scores are uploaded to https://drive.google.com/open?id=1yymuaZx4h8z9f5IPhUY87oBbh5ki9Lat .
 ## Folder structure
 ```
