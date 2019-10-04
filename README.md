@@ -161,3 +161,15 @@ cat ./experiments/submission/v5/clipart_pred.txt ./experiments/submission/v5/pai
 **NOTE**: To use this fusion, we need to extract features for each models for both source domain image and target domain images. The features are very large (around 260GB) so we do not include in this repo. If you run step14, these features will be extracted already. 
 
 This submission achieves 71.41%.
+
+## Citation
+Please cite our technique report in your publications if it helps your research:
+
+```
+@article{pan2019visda,
+  title={Multi-Source Domain Adaptation and Semi-Supervised Domain Adaptation with Focus on Visual Domain Adaptation Challenge 2019},
+  author={Pan, Yingwei and Li, Yehao and Cai, Qi and Chen, Yang and Yao, Ting},
+  booktitle={Visual Domain Adaptation Challenge},
+  year={2019}
+}
+```
