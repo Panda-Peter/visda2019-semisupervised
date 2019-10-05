@@ -163,7 +163,7 @@ cat ./experiments/submission/v5/clipart_pred.txt ./experiments/submission/v5/pai
 This submission achieves 71.41%.
 
 ## Citation
-Please cite our technique report in your publications if it helps your research:
+Please cite our technical report in your publications if it helps your research:
 
 ```
 @article{pan2019visda,
